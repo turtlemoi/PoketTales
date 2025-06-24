@@ -1,0 +1,28 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Auto-generated VS/JetBrains project files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Visual Studio Code
+.vscode/
+
+# Crashlytics generated file
+crashlytics-build.properties
+
+# Gradle cache
+.gradle/
