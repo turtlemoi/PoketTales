@@ -21,7 +21,7 @@ public class Tile : MonoBehaviour
             // 기본 색상 설정
             Renderer renderer = cube.GetComponent<Renderer>();
             renderer.material.color = Color.gray;
-            Debug.Log($"Created visual element for tile at {gridPosition}");
+            Debug.Log($"타일 at {gridPosition}에 시각적 요소 생성됨");
         }
 
         // Collider가 없으면 추가
@@ -77,12 +77,12 @@ public class Tile : MonoBehaviour
             if (battleManager.moveableTiles.Contains(this))
             {
                 battleManager.MoveUnit(gridPosition);
-                Debug.Log($"Unit moved to position: {gridPosition}");
+                Debug.Log($"유닛이 위치로 이동: {gridPosition}");
             }
         }
         
-        Debug.Log($"Tile clicked at position: {gridPosition}");
-        Debug.Log($"Is walkable: {isWalkable}");
-        Debug.Log($"Unit on tile: {(unitOnTile != null ? unitOnTile.name : "None")}");
+        Debug.Log($"타일 클릭됨: 위치 {gridPosition}");
+        Debug.Log($"이동 가능: {isWalkable}");
+        Debug.Log($"타일 위 유닛: {(unitOnTile != null ? unitOnTile.name : "없음")}");
     }
 }

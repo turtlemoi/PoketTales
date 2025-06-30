@@ -50,5 +50,7 @@ public class MapManager : MonoBehaviour
                 tiles[x, y] = tile;
             }
         }
+        
+        Debug.Log($"맵 생성 완료: {width}x{height} 크기");
     }
 }
